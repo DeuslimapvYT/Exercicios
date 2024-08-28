@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPELHO</title>
+    <style>
+        body {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: brown;
+            text-align: center;
+        }
+
+        .button {
+            background-color: beige;
+            font-size: 20px;
+            padding: 4px 30px;
+            border-radius: 10px;
+        }
+
+        .tam {
+            padding: 10px 15px;
+        }
+    </style>
+    <script>
+        function botao() {
+            DigiteNome = document.form1.entrada.value;
+            Resultado = ""
+            i = DigiteNome.length; //Length --> COMPRIMENTO DO TEXTO
+            while (i > 0) {
+                i--;
+                Resultado = Resultado + DigiteNome.charAt(i);
+            }
+            document.form1.saida.value = Resultado
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <h1>ESPELHO</h1>
+        <form name="form1">
+            <p>DIGITE SEU NOME</p>
+            <input class="tam" type="#" name="entrada">
+            <br>
+            <br>
+            <br>
+            <input class="button" type="button" onclick="botao()" value="trocar">
+            <br>
+            <br>
+            <br>
+            <p>RESULTADO</p>
+            <input class="tam" type="#" name="saida" disabled="true">
+        </form>
+    </table>
+</body>
+
+</html>
