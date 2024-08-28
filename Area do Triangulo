@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retângulo</title>
+    <style>
+        body{
+            text-align: center;
+    
+        }
+        h1{
+            color: #f3f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcular Retângulo</h1>
+    <form name="f1rm">
+        <p>Comprimento do retângulo</p>
+            <input type="text" name="comp">
+        <p>Altura do retângulo</p>
+            <input type="text" name="alt">
+            <br>
+            <br>
+        <input type="button" onclick="inicio()" value="INICIAR">
+        <p>Resposta</p>
+            <input type="text" name="resp" disable="true">
+    </form>
+</body>
+<script>
+    function inicio(){
+        compr = document.f1rm.comp.value;
+        altu = document.f1rm.alt.value;
+        result = compr * altu;
+        document.f1rm.resp.value = result;
+    }
+</script>
+</html>
