@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste salarial</title>
+</head>
+<body>
+    <h1>Reajuste Salarial</h1>
+    <form name="f1rm">
+        <p>SALÁRIO</p>
+            <input type="text" name="SAL">
+        <p>PERCENTUAL</p>
+            <input type="text" name="PERC">
+            <br>
+            <br>
+        <input type="button" name="btn" onclick="comecar()" value="NOVO SALÁRIO">
+        <br>
+        <br>
+        <input type="text" name="NOVSAL" disabled="true">
+    </form>
+</body>
+<script>
+    //FAÇA UM FORMULARIO PARA LER O SALARIO MENSAL ATUAL DE UM FUNCIONARIO//
+    //E O PERCENTUAL DE REAJUSTE. CALCULE E ESCREVA O VALOR DO NV SALRIO//
+    function comecar() {
+        if (document.f1rm.btn.value == "NOVO SALÁRIO") {
+            sal = parseFloat(document.f1rm.SAL.value);
+            perc = parseFloat(document.f1rm.PERC.value);
+            x = perc / 100
+            rea = sal * x;
+            novsal = sal + rea;
+            document.f1rm.NOVSAL.value = novsal;
+            document.f1rm.btn.value = "LIMPAR";
+        }
+        else {
+            document.f1rm.NOVSAL.value = "";
+            document.f1rm.SAL.value = "";
+            document.f1rm.PERC.value = "";
+            document.f1rm.btn.value = "NOVO SALÁRIO";
+        }
+    }
+</script>
+</html>
