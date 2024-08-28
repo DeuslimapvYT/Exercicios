@@ -2,9 +2,9 @@
 <div style= color:yellow;>
     ⚠️  Criei esse repositório para ajudar meus colegas do curso e atualizar os trabalhos passados em aula ⚠️
 
-<br>
-<br>
 </div>
+<br/>
+<br/>
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/p4ulo_vit0r/)
 [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DeuslimapvYT/Exercicios)
