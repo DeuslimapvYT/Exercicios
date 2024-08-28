@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+
+        }
+
+        h1 {
+            color: #f3f;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sucessor e Antecessor</h1>
+    <form name="f1rm">
+        <p>Numero:</p>
+        <input type="text" id="numero">
+        <br>
+        <br>
+        <input type="button" name="botao" onclick="processar()" value="INICIAR">
+        <p>Sucessor:</p>
+        <input type="text" id="Sucessor" disabled="true">
+        <p>Antecessor:</p>
+        <input type="text" id="Antecessor" disabled="true">
+    </form>
+</body>
+<script>
+    function processar() {
+        Num = document.f1rm.numero.value;
+        suce = parseFloat(Num) + 1;
+        ant = parseFloat(Num) - 1;
+
+        document.f1rm.Sucessor.value = suce
+        document.f1rm.Antecessor.value = ant
+    }
+</script>
+
+</html>
