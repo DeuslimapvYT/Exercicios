@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        p {
+            color: rgb(255, 0, 21);
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="f1rm">
+        <p>Numero:</p>
+        <input type="text" id="numero">
+        <br>
+        <br>
+        <input type="button" onclick="processar()" value="INICIAR">
+    </form>
+</body>
+<script>
+    function processar() {
+        num = document.f1rm.numero.value;
+        num = parseFloat(num)
+        for (i = 1; i < 11; i++) {
+            let res = i * num
+            document.write(i + "x" + num + "=" + res)
+            document.write("<br/>")
+        }
+    }
+</script>
+
+</html>
