@@ -1,0 +1,27 @@
+<?php
+    echo "Olá Mundo!";
+
+    echo "<html>";
+    echo "<head>";
+    echo "<title>Document</title>";
+    echo "</head>";
+    echo "<body style=font-size:35px; color:green >";
+
+    echo "<h2 style=color:red;>Trabalho 28/08/2024</h2>";
+
+    echo "<ul>"; 
+    for ($i=0; $i <=10; $i++) {
+        $resposta;
+        if ($i % 2 == 0) {
+            $resposta = "par";
+        }
+        else {
+            $resposta = "ímpar";
+        }
+        echo "<li>O numero $i é $resposta.</li>";
+    }
+    echo "</ul>"; 
+
+    echo "</body>";
+    echo "</html>";
+?>
