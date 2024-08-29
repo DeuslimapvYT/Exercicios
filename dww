@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form name="f1rm">
+        <input type="text" placeholder="Escolha a operação" name="calcular">
+                <input type="button" name="somar" value="+">
+                <input type="button" name="sub" value="-">
+                <input type="button" name="mult" value="x">
+                <input type="button" name="div" value="/">
+                <br>
+                <br>
+        <input type="button" value="iniciar" onclick="INICIAR()">
+    </form>
+</body>
+<script>
+    function INICIAR(){
+        num=document.f1rm.calcular.value;
+        SOM=parseFloat(document.f1rm.somar.value);
+        SUB=parseFloat(document.f1rm.sub.value);
+        MULT=parseFloat(document.f1rm.mult.value);
+        DIV=parseFloat(document.f1rm.div.value);
+        for (i=1 ; i<=10 ; i++)
+        {
+            let SOM = i + num
+            document.write( i + "+" + num + " = " + SOM )
+            document.write("</br>")
+        for (i=1 ; i<=10 ; i++)
+    {
+            let SUB = i - num
+            document.write( i + "-" + num + " = " + SUB )
+            document.write("</br>")
+    }
+        for (i=1 ; i<=10 ; i++){
+            let MULT = i * num
+            document.write( i + "x" + num + " = " + MULT )
+            document.write("</br>")
+    }
+        for (i=1 ; i<=10 ; i++){
+            let DIV = i / num
+            document.write( i + "/" + num + " = " + DIV )
+            document.write("</br>")
+        }
+    }
+}
+</script>
+</html>
