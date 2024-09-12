@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(60, 139, 223);
+    height: 100vh;
+}
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header{
+    padding: 20px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+</sytle>
+</head>
+
+<body>
+    <header>
+        <div class="interface"> <!--BARRA DE MENU-->
+            <div class="title">
+                <h1>Fixlizzer</h1>
+            </div>
+                    <nav class="area-menu">
+                    <ul>
+                        <li>
+                            <a href="">MENU</a>
+                            <a href="">SOBRE</a>
+                            <a href="">CONTATO</a>
+                        </li>
+                    </ul>
+                    </nav>
+                    <div class="cadastro">
+                        <a href="#">
+                            <button>SING IN</button>
+                        </a>
+                    </div>
+            </div> <!--FIM DA INTERFACE2-->
+        </div> <!--FIM DA BARRA DE MENU-->
+    </header>
+</body>
+
+</html>
